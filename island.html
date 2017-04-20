@@ -17,27 +17,6 @@
 	</head>
 
 	<body>
-
-		<script>
-
-		$(document).ready(function() {
-
-		    var islandSrc = $('#island');
-
-		    console.log(islandSrc);
-
-		var can = document.getElementById('island');
-		var ctx = can.getContext('2d');
-
-		// ctx.fillRect(50,50,50,50);
-
-		var imgN = new Image();
-		imgN.src = can.toDataURL();
-		document.body.appendChild(imgN);
-
-		});
-
-		</script>
         <canvas id="island" resize="true"></canvas>
         <canvas id="perlin" hidden="true"></canvas>
 
@@ -59,7 +38,26 @@
         </script>
 
 
+<script>
 
+$(document).ready(function() {
+
+    var islandSrc = $('#island');
+
+    console.log(islandSrc);
+
+var can = document.getElementById('island');
+var ctx = can.getContext('2d');
+
+// ctx.fillRect(50,50,50,50);
+
+var imgN = new Image();
+imgN.src = can.toDataURL();
+document.body.appendChild(imgN);
+
+});
+
+</script>
 
 
 
