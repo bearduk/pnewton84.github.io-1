@@ -11,6 +11,9 @@
         <script type="text/javascript" src="js/Simplex.js"></script>
         <script type="text/javascript" src="js/perlin.js"></script>
         <script type="text/javascript" src="js/Island.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 	</head>
 
 	<body>
@@ -33,6 +36,31 @@
                 Island.init();
             };
         </script>
+
+
+<script>
+    
+$(document).ready(function() {
+ 
+    var islandSrc = $('#island');
+
+    console.log(islandSrc);
+
+var can = document.getElementById('island');
+var ctx = can.getContext('2d');
+
+// ctx.fillRect(50,50,50,50);
+
+var imgN = new Image();
+imgN.src = can.toDataURL();
+document.body.appendChild(imgN);
+
+});
+
+</script>
+
+
+
         <noscript>You need to enable Javascript in your browser for this page to display properly.</noscript>
 	</body>
 </html>
