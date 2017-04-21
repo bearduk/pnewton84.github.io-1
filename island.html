@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>Map</title>
-        
+
         <link href="css/map.css" rel="stylesheet">
 
         <script type="text/javascript" src="js/rhill-voronoi-core.min.js"></script>
@@ -19,7 +19,7 @@
 	<body>
         <canvas id="island" resize="true"></canvas>
         <canvas id="perlin" hidden="true"></canvas>
-        
+
         <script type="application/javascript">
             paper.install(window);
             window.onload = function(e) {
@@ -39,9 +39,11 @@
 
 
 <script>
-    
+
+
 $(document).ready(function() {
- 
+
+
     var islandSrc = $('#island');
 
     console.log(islandSrc);
@@ -59,6 +61,7 @@ document.body.appendChild(imgN);
 
 
 islandSrc.remove();
+
 
 </script>
 
